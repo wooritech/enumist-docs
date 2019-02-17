@@ -1,2 +1,5 @@
 # Package Dependencies
 node_modules
+
+# Build
+dist/
