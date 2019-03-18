@@ -27,6 +27,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   repo: wooritech/enumist-docs
   keep-history: true
-  fqdn: docs.enumist.com
+  fqdn: guides.enumist.com
   on:
     branch: master
