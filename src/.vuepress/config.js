@@ -1,0 +1,50 @@
+module.exports = {
+  title: 'enumist',
+  description: '사용자 가이드',
+  base: '/',
+  themeConfig: {
+    sidebar: {
+      '/guide': [
+        {
+          title: '사용자 가이드',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            '/guide/',
+            '/guide/institution-join',
+            '/guide/subject-create',
+            '/guide/factor-create',
+            '/guide/sponsor-create',
+            '/guide/trial-create',
+            '/guide/schedule-create',
+            '/guide/participant-create',
+            '/guide/sms-notify',
+            '/guide/file-attach',
+            '/guide/subject-blacklist',
+            '/guide/authority',
+            '/guide/user-edit',
+            '/guide/logout',
+          ],
+        },
+        {
+          title: '화면별 도움말',
+          collapsable: false,
+          children: [
+            '/guide/pages/trial-list',
+            '/guide/pages/trial-calendar',
+            '/guide/pages/subject',
+            '/guide/pages/subject-blacklist',
+            '/guide/pages/factor',
+            '/guide/pages/sponsor',
+            '/guide/pages/notification-sms',
+            '/guide/pages/file',
+            '/guide/pages/settings',
+            '/guide/pages/settings-authority',
+            '/guide/pages/user',
+          ],
+        },
+      ],
+    },
+  },
+  plugins: { '@vuepress/medium-zoom': true },
+};
