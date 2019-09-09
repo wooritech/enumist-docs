@@ -1,0 +1,22 @@
+name: Github Pages
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Build and Deploy
+      uses: wooritech/github-actions/gh-pages@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_SCRIPT: yarn && yarn build
+        FOLDER: docs 
+        CNAME: docs.enumist.com
